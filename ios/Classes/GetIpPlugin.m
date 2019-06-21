@@ -7,7 +7,7 @@
     FlutterMethodChannel* channel =
     [FlutterMethodChannel methodChannelWithName:@"get_ip"
                                 binaryMessenger:[registrar messenger]];
-    GetIosDeviceIdfaPlugin* instance = [[GetIosDeviceIdfaPlugin alloc] init];
+    GetIpPlugin* instance = [[GetIpPlugin alloc] init];
     [registrar addMethodCallDelegate:instance channel:channel];
 }
 
